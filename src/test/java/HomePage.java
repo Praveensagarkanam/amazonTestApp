@@ -16,6 +16,7 @@ public class HomePage {
     private By GoButton = By.xpath("(//input[@type='submit'])[2]");
 
     private By HighlightedText = By.xpath("(//div[@class='a-row']//span[text()='Televisions'])[2]");
+
     public void SelectBrand(String brand){
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(Brand(brand)));
